@@ -34,7 +34,7 @@ docker compose up -d db rabbitmq
 pip install -e ".[dev]"
 ollama pull qwen3:8b
 uvicorn app.main:app --reload
-celery -A app.worker.celery_app worker -l info
+celery -A app.celery.celery_app celery -l info
 ```
 
 Health check: `curl localhost:8000/health`

@@ -29,7 +29,7 @@ services:
 
   worker:
     build: ../rag_engine
-    command: celery -A app.worker.celery_app worker --loglevel=info
+    command: celery -A app.celery.celery_app celery --loglevel=info
     env_file: .env
     volumes: [".:/code"]
     depends_on:
