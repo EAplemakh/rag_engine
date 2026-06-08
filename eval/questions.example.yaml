@@ -1,0 +1,7 @@
+- question: "How do I configure the database connection?"
+  expected_source: "docs/configuration.md"
+  expected_keywords: ["DATABASE_URL", "postgres"]
+
+- question: "What models does the service use by default?"
+  expected_source: "README.md"
+  expected_keywords: ["bge-m3", "qwen3"]
